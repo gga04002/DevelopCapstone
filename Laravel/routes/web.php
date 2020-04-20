@@ -18,3 +18,9 @@ Route::get('/', function () {
 });
 
 Route::get('stats', 'Daily_statsController@index');
+
+Route::resource('products', 'ProductsController');
+
+Route::resource('challenge', 'ChallengesController');
+
+Route::resource('qna', 'QuestionsController');

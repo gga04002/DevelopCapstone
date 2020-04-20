@@ -9,11 +9,11 @@
 <body>
   <div class="top-menu">
     <ul>
+      <a href="products"><li>제품구매</li></a>
       <a href="stats"><li>통계</li></a>
-      <a href=""><li>소개</li></a>
       <a href=""><li>팁</li></a>
       <a href=""><li>챌린지</li></a>
-      <a href=""><li>게임</li></a>
+      <a href="qna"><li>QnA</li></a>
     </ul>
   </div>
 

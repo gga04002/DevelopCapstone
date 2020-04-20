@@ -1143,6 +1143,7 @@ id largeLabel
 id left
 id line1
 id line3
+id lineChart
 id listMode
 id list_item
 id loginButton
@@ -1169,6 +1170,7 @@ id parent
 id parentPanel
 id parent_matrix
 id percent
+id pieChart
 id pin
 id progress_circular
 id progress_horizontal
@@ -1238,13 +1240,17 @@ id textinput_counter
 id textinput_error
 id textinput_helper_text
 id time
+id timeLinearLayout
+id timeTextView
 id title
 id titleDividerNoCustom
 id title_template
+id todayTime
 id toolbar
 id toolbarTitle
 id toolbar_line
 id top
+id topLinearLayout
 id topPanel
 id touch_outside
 id transition_current_scene

@@ -1,3 +1,11 @@
+/*
+* SubActivity : 사실상 메인 화면
+* Toolbar : 상단 액션바 대신 툴바 씀
+* ViewPager : 화면 옆으로 휙휙 넘길 수 있게 함 -> 프래그먼트 3개 사용
+* ViewPagerAdapter : 뷰페이저와 프래그먼트를 연결
+* TabLayout : 하단부 탭 메뉴
+*
+* */
 package com.example.waistand;
 
 import android.os.Bundle;
@@ -7,6 +15,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager.widget.ViewPager;
 
+import com.example.waistand.R;
+import com.example.waistand.ViewPagerAdapter;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;

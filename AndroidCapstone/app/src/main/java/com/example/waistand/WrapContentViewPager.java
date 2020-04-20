@@ -1,3 +1,8 @@
+/*
+* WrapContentViewPager : Toolbar 사용 시 ViewPager의 android:layout_height="wrap_content"가 적용되지 않는 점을 해결하기 위한 클래스
+* == 뷰페이저의 height 조절 클래스
+* 신경 꺼도 되는 클래스임
+* */
 package com.example.waistand;
 
 import android.content.Context;

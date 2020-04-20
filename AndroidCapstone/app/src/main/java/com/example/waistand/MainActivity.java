@@ -1,3 +1,6 @@
+/*
+ * MainActivity : 접속 시 첫 화면 -> 로그인 화면
+ * */
 package com.example.waistand;
 
 import androidx.appcompat.app.AppCompatActivity;
