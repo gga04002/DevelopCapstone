@@ -1,0 +1,48 @@
+body {
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.top-menu{
+  text-align: center;
+  margin: 20px 0;
+}
+.top-menu ul{
+  padding: 0;
+}
+
+.top-menu ul a{
+  text-decoration-line: none;
+  color: #006629;
+  padding: 0 50px;
+  
+}
+.top-menu ul a li{
+  text-decoration: none;
+  display: inline-block;
+
+}
+
+.main{
+  margin: 0 auto;
+  width: 100%;
+  position: absolute;
+}
+#background{
+  position: absolute;
+  left: 80px;
+
+}
+#background img{
+  width: auto; height: 750px;
+}
+#logo-info {
+  position: absolute;
+
+}
+#logo-info img{
+  width: 600px; height: auto;
+  display: inline-block;
+  position: absolute;
+  margin: 0;
+}
