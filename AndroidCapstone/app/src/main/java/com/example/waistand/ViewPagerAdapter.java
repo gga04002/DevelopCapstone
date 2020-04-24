@@ -10,16 +10,16 @@ import java.util.ArrayList;
 public class ViewPagerAdapter extends FragmentPagerAdapter {
     private ArrayList<Fragment> items;
     private ArrayList<String> itext = new ArrayList<>();
+
+//    public ViewPagerAdapter(FragmentManager fm) {
     public ViewPagerAdapter(FragmentManager fm) {
         super(fm);
-        items = new ArrayList<Fragment>();
-        items.add(new Fragment1());
-        items.add(new Fragment2());
-        items.add(new Fragment3());
+        items = new ArrayList<>();
+        items.add(new FragmentWeeklyInCalendarData());
+        items.add(new FragmentMonthlyInCalendarData());
 
-//        itext.add("오늘 내 자세");
-//        itext.add("통계");
-//        itext.add("tab3");
+//        itext.add("주간 자세 추이");
+//        itext.add("월간 자세 추이");
     }
 
     @Override

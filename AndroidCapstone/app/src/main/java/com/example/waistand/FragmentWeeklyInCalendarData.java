@@ -1,3 +1,7 @@
+/*
+ * Fragment2 : 오늘 하루치 통계 페이지
+ * */
+
 package com.example.waistand;
 
 import android.os.Bundle;
@@ -8,23 +12,20 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Fragment1 extends Fragment {
-    MainActivity mainactivity;
+public class FragmentWeeklyInCalendarData extends Fragment {
 
-    public Fragment1() {
+    public FragmentWeeklyInCalendarData() {
         // Required empty public constructor
     }
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-//        return inflater.inflate(R.layout.fragment_1, container, false);
-        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_1, container, false);
+        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_in_calendar_data_1, container, false);
 
 
         return rootView;

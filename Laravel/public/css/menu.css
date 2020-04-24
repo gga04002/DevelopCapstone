@@ -62,7 +62,7 @@ body {
   height: auto;
   position: relative;
   top: 20px;
-  background-color: antiquewhite;
+  /* background-color: antiquewhite; */
 }
 
 /* ------------------------ */
@@ -74,6 +74,14 @@ body {
   font-size: 18px;
   margin: 10px;
   display: block;
+}
+
+#line-container{
+  width: 650px; height: auto;
+  position: relative;
+}
+#today-line-chart{
+  width: 100%; height: 100%;
 }
 
 #pie-container{

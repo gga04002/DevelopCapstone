@@ -10,41 +10,54 @@
 9        android:targetSdkVersion="28" />
 9-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml
 10
-11    <application
-11-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:5:5-20:19
-12        android:allowBackup="true"
-12-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:6:9-35
-13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.0.1] C:\Users\isle2\.gradle\caches\transforms-2\files-2.1\51ec9767ead7a598d20dd24a7369e6f6\core-1.0.1\AndroidManifest.xml:22:18-86
-14        android:debuggable="true"
-15        android:icon="@mipmap/ic_launcher"
-15-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:7:9-43
-16        android:label="@string/app_name"
-16-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:8:9-41
-17        android:roundIcon="@mipmap/ic_launcher_round"
-17-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:9:9-54
-18        android:supportsRtl="true"
-18-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:10:9-35
-19        android:testOnly="true"
-20        android:theme="@style/AppTheme" >
-20-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:11:9-40
-21        <activity android:name="com.example.waistand.MainActivity" >
-21-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:12:9-18:20
-21-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:12:19-47
-22            <intent-filter>
-22-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:13:13-17:29
-23                <action android:name="android.intent.action.MAIN" />
-23-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:14:17-69
-23-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:14:25-66
-24
-25                <category android:name="android.intent.category.LAUNCHER" />
-25-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:16:17-77
-25-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:16:27-74
-26            </intent-filter>
-27        </activity>
-28        <activity android:name="com.example.waistand.SubActivity" />
-28-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:19:9-48
-28-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:19:19-46
-29    </application>
+11    <uses-permission android:name="android.permission.BLUETOOTH" />
+11-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:5:22-65
+12    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+12-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:6:5-73
+12-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:6:22-71
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+16
+17    <application
+17-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:7:5-22:19
+18        android:allowBackup="true"
+18-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:8:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.0.1] C:\Users\isle2\.gradle\caches\transforms-2\files-2.1\51ec9767ead7a598d20dd24a7369e6f6\core-1.0.1\AndroidManifest.xml:22:18-86
+20        android:debuggable="true"
+21        android:icon="@mipmap/ic_launcher"
+21-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:9:9-43
+22        android:label="@string/app_name"
+22-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:10:9-41
+23        android:roundIcon="@mipmap/ic_launcher_round"
+23-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:11:9-54
+24        android:supportsRtl="true"
+24-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:12:9-35
+25        android:testOnly="true"
+26        android:theme="@style/AppTheme" >
+26-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:13:9-40
+27        <activity android:name="com.example.waistand.MainActivity" >
+27-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:14:9-20:20
+27-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:14:19-47
+28            <intent-filter>
+28-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:15:13-19:29
+29                <action android:name="android.intent.action.MAIN" />
+29-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:16:17-69
+29-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:16:25-66
 30
-31</manifest>
+31                <category android:name="android.intent.category.LAUNCHER" />
+31-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:18:17-77
+31-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:18:27-74
+32            </intent-filter>
+33        </activity>
+34        <activity android:name="com.example.waistand.SubActivity" />
+34-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:21:9-48
+34-->C:\DevelopCapstone\AndroidCapstone\app\src\main\AndroidManifest.xml:21:19-46
+35        <activity android:name="app.akexorcist.bluetotohspp.library.DeviceList" />
+35-->[com.akexorcist:bluetoothspp:1.0.0] C:\Users\isle2\.gradle\caches\transforms-2\files-2.1\12bc9196eb9d7e526eae91f2d5b8e3a1\jetified-bluetoothspp-1.0.0\AndroidManifest.xml:11:9-83
+35-->[com.akexorcist:bluetoothspp:1.0.0] C:\Users\isle2\.gradle\caches\transforms-2\files-2.1\12bc9196eb9d7e526eae91f2d5b8e3a1\jetified-bluetoothspp-1.0.0\AndroidManifest.xml:11:19-80
+36    </application>
+37
+38</manifest>

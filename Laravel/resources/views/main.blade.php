@@ -12,7 +12,7 @@
       <a href="products"><li>제품구매</li></a>
       <a href="stats"><li>통계</li></a>
       <a href=""><li>팁</li></a>
-      <a href=""><li>챌린지</li></a>
+      <a href="challenge"><li>챌린지</li></a>
       <a href="qna"><li>QnA</li></a>
     </ul>
   </div>
@@ -21,15 +21,20 @@
     <div id="background">
       <img src="/sources/web_background.png" alt="background image">
     </div>
-   <div id="logo-info">
-     <img src="/sources/logo_white.png" alt="logo">
-     <div id="info">
-       <p>ウエイスタンドはIoT座布団を通して、正しくて健康的な姿勢で座る習慣を形成します。</p>
-     </div>
-   </div>
-   <div id="login-button">
 
-   </div>
+    <div id="foreground">
+      <div id="logo-info">
+        <img src="/sources/logo_white.png" alt="logo">
+        <div id="info">
+          <p>ウエイスタンドはIoT座布団を通して、正しくて健康的な姿勢で座る習慣を形成します。</p>
+        </div>
+      </div>
+      <div id="login-button">
+        <button>
+          로그인/회원가입
+        </button>
+      </div>
+    </div>
   </div>
 </body>
 </html>

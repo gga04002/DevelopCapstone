@@ -6,12 +6,13 @@ package com.example.waistand;
 
 import android.graphics.Color;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 import com.github.mikephil.charting.charts.LineChart;
 import com.github.mikephil.charting.charts.PieChart;
@@ -27,12 +28,7 @@ import com.github.mikephil.charting.utils.EntryXComparator;
 import java.util.ArrayList;
 import java.util.Collections;
 
-/**
- * A simple {@link Fragment} subclass.
- */
-public class Fragment2 extends Fragment {
-//    MainActivity mainactivity;
-
+public class FragmentTodayGraph extends Fragment {
     private PieChart pieChart;
     private LineChart lineChart;
 
@@ -44,15 +40,10 @@ public class Fragment2 extends Fragment {
     private ArrayList<Integer> jsonList_line = new ArrayList<>();
     private ArrayList<String> labelList_line = new ArrayList<>();
 
-    public Fragment2() {
-        // Required empty public constructor
-    }
-
-
+    @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_2, container, false);
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_today_graph, container, false);
 
         pieChart = rootView.findViewById(R.id.pieChart);
         lineChart = rootView.findViewById(R.id.lineChart);
@@ -121,7 +112,7 @@ public class Fragment2 extends Fragment {
         Collections.sort(entries, new EntryXComparator());
         // 소팅 안하면 java.lang.NegativeArraySizeException: -2 에러남
 
-       LineData lineData = new LineData(lineDataSet); // line chart 데이터 세팅 완료
+        LineData lineData = new LineData(lineDataSet); // line chart 데이터 세팅 완료
         lineDataSet.setColors(ColorTemplate.COLORFUL_COLORS); // 차트 색상 세팅
 //        dataSet.setDrawCircles(true); //선 둥글게 만들기
 //        dataSet.setDrawFilled(true); //그래프 밑부분 색칠

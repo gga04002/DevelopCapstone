@@ -9,19 +9,29 @@
 package com.example.waistand;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
 
 import com.example.waistand.R;
 import com.example.waistand.ViewPagerAdapter;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
 
 public class SubActivity extends AppCompatActivity {
+    private FragmentManager fragmentManager = getSupportFragmentManager();
+    private FragmentSeat fragmentSeat = new FragmentSeat();
+    private FragmentTodayGraph fragmentTodayGraph = new FragmentTodayGraph();
+    private FragmentCalendarData fragmentCalendarData = new FragmentCalendarData();
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +41,32 @@ public class SubActivity extends AppCompatActivity {
 //        getSupportActionBar().setDisplayShowTitleEnabled(false);
         setSupportActionBar(toolbar);
 
+        FragmentTransaction transaction = fragmentManager.beginTransaction();
+        transaction.replace(R.id.main_frameLayout, fragmentSeat).commitAllowingStateLoss();
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                FragmentTransaction transaction = fragmentManager.beginTransaction();
+
+                switch(menuItem.getItemId()){
+                    case R.id.tab1_seat:
+                        transaction.replace(R.id.main_frameLayout, fragmentSeat).commitAllowingStateLoss();
+                        break;
+                    case R.id.tab2_todayGraph:
+                        transaction.replace(R.id.main_frameLayout, fragmentTodayGraph).commitAllowingStateLoss();
+                        break;
+                    case R.id.tab3_calendarData:
+                        transaction.replace(R.id.main_frameLayout, fragmentCalendarData).commitAllowingStateLoss();
+                        break;
+                }
+
+                return true;
+            }
+        });
+
+        /*
         ViewPager vp = findViewById(R.id.viewPager);
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         vp.setAdapter(adapter);
@@ -45,5 +81,7 @@ public class SubActivity extends AppCompatActivity {
 
         for(int i=0; i<3; i++)
             tab.getTabAt(i).setIcon(images.get(i));
+
+         */
     }
 }

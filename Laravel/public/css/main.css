@@ -36,13 +36,35 @@ body {
 #background img{
   width: auto; height: 750px;
 }
-#logo-info {
+
+#foreground{
   position: absolute;
+  margin: 50px 0 0 150px;
+}
+
+#logo-info {
+  position: relative;
 
 }
 #logo-info img{
   width: 600px; height: auto;
   display: inline-block;
-  position: absolute;
+  position: relative;
   margin: 0;
+}
+
+#login-button {
+  margin: 100px 0 0 180px;
+  display: inline-block;
+  position: relative;
+  width: 160px;
+  height: 100px;
+}
+#login-button button{
+  font-size: 25px;
+  border: 2px solid white;
+  font-weight: 700;
+  text-align: center;
+  background-color: none;
+  cursor: pointer;
 }

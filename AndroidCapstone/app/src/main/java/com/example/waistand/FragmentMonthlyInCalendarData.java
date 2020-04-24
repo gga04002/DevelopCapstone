@@ -12,10 +12,10 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Fragment3 extends Fragment {
+public class FragmentMonthlyInCalendarData extends Fragment {
     MainActivity mainactivity;
 
-    public Fragment3() {
+    public FragmentMonthlyInCalendarData() {
         // Required empty public constructor
     }
 
@@ -23,7 +23,7 @@ public class Fragment3 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_1, container, false);
+        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_in_calendar_data_2, container, false);
 
 
         return rootView;
