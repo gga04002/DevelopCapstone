@@ -21,10 +21,14 @@
   <canvas id="sum-pie-chart"></canvas>
 </div>
 
+<div class="time">
+  <div id="today_sum_time"></div>
+</div>
+
 <script>
   // Chart.platform.disableCSSInjection = true;
-  var cData = JSON.parse(`<?php echo $daily_stat?>`); 
-  console.log(cData);
+  // var cData = JSON.parse(`?php echo $daily_stat?`); 
+  // console.log(cData);
   var ctx_sum = document.getElementById('sum-pie-chart');
   var ctx_line = document.getElementById('today-line-chart');
   const colors = [
@@ -64,7 +68,7 @@
       // responsive: true,
         title: {
             display: true,
-            text: '라인 차트 테스트'
+            text: '오늘 하루 자세 추이'
         },
         tooltips: {
             mode: 'index',
@@ -79,7 +83,7 @@
                 display: true,
                 scaleLabel: {
                     display: true,
-                    labelString: 'x축'
+                    labelString: 'x축: 시간'
                 }
             }],
             yAxes: [{
@@ -89,7 +93,7 @@
                 },
                 scaleLabel: {
                     display: true,
-                    labelString: 'y축'
+                    labelString: 'y축: 비율'
                 }
             }]
         }

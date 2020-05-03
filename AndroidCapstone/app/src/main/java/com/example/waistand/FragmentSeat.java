@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,12 +28,14 @@ public class FragmentSeat extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_seat, container, false);
-/*
-        btSpp = new BluetoothSPP(getActivity());
+
         btnConnect = rootView.findViewById(R.id.btnConnect);
         btnSend = rootView.findViewById(R.id.btnSend);
 
-        if(btSpp.isBluetoothAvailable()){ // 블루투스 사용 불가
+        btSpp = new BluetoothSPP(getContext());
+        Log.i("BLUETOOTHENABLE", ""+btSpp);
+
+        if(!btSpp.isBluetoothAvailable()){ // 블루투스 사용 불가
             Toast.makeText(getActivity().getApplicationContext(), "블루투스를 사용할 수 없습니다.", Toast.LENGTH_SHORT).show();
             getActivity().finish();
         }
@@ -74,11 +77,13 @@ public class FragmentSeat extends Fragment {
                 }
             }
         });
-*/
+
+
+
         return rootView;
     }
 
-/*    @Override
+    @Override
     public void onDestroy() {
         super.onDestroy();
         btSpp.stopService();
@@ -129,5 +134,5 @@ public class FragmentSeat extends Fragment {
         }
     }
 
- */
+
 }

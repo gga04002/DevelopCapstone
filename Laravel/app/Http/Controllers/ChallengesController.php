@@ -13,7 +13,11 @@ class ChallengesController extends Controller
      */
     public function index()
     {
-        return view('challenge');
+        $challenges = \App\Challenge::get();
+        return view('challenge.index', [
+          'challenges'=>$challenges,
+          'menuName'=>'챌린지'
+          ]);
     }
 
     /**
@@ -34,7 +38,24 @@ class ChallengesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+      if($request->has('entry_fee')){
+        $join_challenge = \App\Join_challenge::create([
+          'challenge_id' => $request->challenge_id,
+          'user_id' => $request->user_id,
+          'start_date' => $request->start_date,
+          'end_date' => $request->end_date,
+          'entry_fee' => $request->entry_fee,
+        ]);
+      }else {
+        $join_challenge = \App\Join_challenge::create([
+          'challenge_id' => $request->challenge_id,
+          'user_id' => $request->user_id,
+          'start_date' => $request->start_date,
+          'end_date' => $request->end_date,
+        ]);
+      }
+
+      return redirect()->route('joinedChallenge', ['join_challenge', $join_challenge]);
     }
 
     /**
@@ -45,7 +66,12 @@ class ChallengesController extends Controller
      */
     public function show($id)
     {
-        //
+        $challenge = \App\Challenge::where('id', '=', $id)->first();
+
+        return view('challenge.show', [
+          'challenge'=>$challenge,
+          'menuName' => '챌린지'
+        ]);
     }
 
     /**

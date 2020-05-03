@@ -27,11 +27,20 @@
 
     </com.google.android.material.tabs.TabLayout>
 
-    <com.example.waistand.WrapContentViewPager
+    <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
-        android:layout_height="550dp"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
         app:layout_constraintTop_toBottomOf="@id/tab"
-        android:background="@color/colorMagneticGrey"/>
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@color/colorMagneticGrey">
+
+    </androidx.viewpager.widget.ViewPager>
+<!--    <com.example.waistand.WrapContentViewPager-->
+<!--        android:id="@+id/viewPager"-->
+<!--        android:layout_height="550dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/tab"-->
+<!--        android:background="@color/colorMagneticGrey"/>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
