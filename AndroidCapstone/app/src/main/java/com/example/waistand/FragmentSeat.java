@@ -9,11 +9,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import java.util.ArrayList;
+import java.util.Objects;
 
 import app.akexorcist.bluetotohspp.library.BluetoothSPP;
 import app.akexorcist.bluetotohspp.library.BluetoothState;
@@ -27,7 +31,7 @@ public class FragmentSeat extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_seat, container, false);
+        final ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_seat, container, false);
 
         btnConnect = rootView.findViewById(R.id.btnConnect);
         btnSend = rootView.findViewById(R.id.btnSend);
@@ -43,8 +47,51 @@ public class FragmentSeat extends Fragment {
         // 데이터 수신 이벤트 리스너
         btSpp.setOnDataReceivedListener(new BluetoothSPP.OnDataReceivedListener() {
             @Override
-            public void onDataReceived(byte[] data, String message) { // 아두이노에서 넘어오는 데이터를 수신
+            public void onDataReceived(byte[] data, String message) { // 아두이노 -> 안드로이드 데이터를 수신
                 Toast.makeText(getContext(), message, Toast.LENGTH_SHORT).show();
+
+                String[] array;
+                ArrayList<Integer> idList = new ArrayList<>();
+
+                //텍스트 레이아웃 배치 값 받아오기
+                for (int i=0 ; i<28 ; i++) {
+                    idList.add(getResources().getIdentifier("tv" + i, "id", Objects.requireNonNull(getActivity()).getPackageName()));
+                }
+
+                array = message.split(",");
+//                Log.i("array length ", array.length+"");
+                // array.length : 29 / array[0] = "data"
+
+                //int 배열로 변환
+//                    int arrayInt[] = new int[array.length];
+
+                ArrayList<Integer> arrayInt = new ArrayList<>();
+                int sensorVal;
+
+                for (int i=1; i<array.length; i++){
+                    arrayInt.add(Integer.parseInt(array[i]));
+
+                    //값에따라 색상 바뀌기 => 왜 구린 색이 되지..?
+                    sensorVal = arrayInt.get(i-1);
+                    /*
+                    if (sensorVal<50){
+                        ((TextView) findViewById(idList.get(i-1))).setBackgroundColor(Color.WHITE);
+                    }
+                    else if (sensorVal>=50 && sensorVal<100){
+                        ((TextView) findViewById(idList.get(i-1))).setBackgroundColor(R.color.AURORA_GREEN);
+                    }else if (sensorVal>=100 && sensorVal<150){
+                        ((TextView) findViewById(idList.get(i-1))).setBackgroundColor(R.color.COOL_GREEN);
+                    }else if (sensorVal>=150 && sensorVal<200){
+                        ((TextView) findViewById(idList.get(i-1))).setBackgroundColor(R.color.KELLEY_GREEN);
+                    }else if (sensorVal>=200){
+                        ((TextView) findViewById(idList.get(i-1))).setBackgroundColor(R.color.LA_SALLE_GREEN);
+                    }
+                     */
+
+                    // 센서배치대로 그려놓은 각 TextView 값을 실제 센서값대로 바꾸기
+                    // 이 때 array[i] 타입은 String
+                    ((TextView)rootView.findViewById(idList.get(i-1))).setText(array[i]);
+                }
             }
         });
 
