@@ -17,7 +17,10 @@ Route::get('/', function () {
     return view('main');
 });
 
-Route::get('stats', 'Daily_statsController@index');
+Route::get('stats', 'PostureHistoryController@index');
+Route::get('stats/today', 'PostureHistoryController@todayAjax'); // today 통계 ajax
+Route::get('stats/week', 'PostureHistoryController@weekAjax'); // week 통계 ajax
+Route::get('stats/month', 'PostureHistoryController@monthAjax'); // month 통계 ajax
 
 Route::resource('products', 'ProductsController');
 
@@ -27,3 +30,7 @@ Route::get('joinedChallenge', function(){
 })->name('joinedChallenge');
 
 Route::resource('qna', 'QuestionsController');
+
+Route::get('/test', function() {  // siqtheme 라우팅
+	return view('test');
+});

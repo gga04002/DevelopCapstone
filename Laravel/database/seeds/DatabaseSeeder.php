@@ -1,5 +1,6 @@
 <?php
 
+use App\DailyPostureHistory;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -11,6 +12,9 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(ChallengesTableSeeder::class);
+        $this->call(UsersTableSeeder::class);
+        $this->call(PostureHistoriesTableSeeder::class);
+        $this->call(DailyPostureHistoriesTableSeeder::class);
+        // $this->call(ChallengesTableSeeder::class);
     }
 }

@@ -1,0 +1,38 @@
+#main-left{
+  position: relative;
+  width: 600px;
+  margin: 10px;
+  background-color: aqua;
+}
+
+#left-top-info-banner{
+  margin: 10px;
+  height: 300px;
+  background-color: darkgoldenrod;
+}
+
+#left-main{
+  margin: 10px;
+  position: relative;
+  height: 500px;
+  background-color: fuchsia;
+}
+
+#main-right{
+  margin: 10px;
+  width: 300px;
+  background-color: cornflowerblue;
+}
+
+#right-top-select-box{
+  margin: 10px;
+  height: 400px;
+  background-color: red;
+}
+
+#right-info-banner{
+  margin: 10px;
+  height: 500px;
+  background-color: green;
+
+}

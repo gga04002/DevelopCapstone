@@ -19,4 +19,12 @@
     <color name="colorNebulasBlue">#2D61A6</color>
     <color name="colorMattBlue">#3462BF</color>
     <color name="colorYellow">#ffea00</color>
+
+    <color name="tomato">#ffff6347</color>
+
+    <color name="winterMist">#e3ffea</color>
+    <color name="AURORA_GREEN">#7be095</color>
+    <color name="COOL_GREEN">#37bd59</color>
+    <color name="KELLEY_GREEN">#02b32f</color>
+    <color name="LA_SALLE_GREEN">#007531</color>
 </resources>

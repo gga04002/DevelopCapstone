@@ -3,6 +3,7 @@ package com.example.waistand;
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -33,6 +34,7 @@ public class FragmentSeat extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         final ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_seat, container, false);
 
+/*
         btnConnect = rootView.findViewById(R.id.btnConnect);
         btnSend = rootView.findViewById(R.id.btnSend);
 
@@ -73,7 +75,7 @@ public class FragmentSeat extends Fragment {
 
                     //값에따라 색상 바뀌기 => 왜 구린 색이 되지..?
                     sensorVal = arrayInt.get(i-1);
-                    /*
+
                     if (sensorVal<50){
                         ((TextView) findViewById(idList.get(i-1))).setBackgroundColor(Color.WHITE);
                     }
@@ -86,7 +88,7 @@ public class FragmentSeat extends Fragment {
                     }else if (sensorVal>=200){
                         ((TextView) findViewById(idList.get(i-1))).setBackgroundColor(R.color.LA_SALLE_GREEN);
                     }
-                     */
+
 
                     // 센서배치대로 그려놓은 각 TextView 값을 실제 센서값대로 바꾸기
                     // 이 때 array[i] 타입은 String
@@ -125,6 +127,7 @@ public class FragmentSeat extends Fragment {
             }
         });
 
+        */
 
 
         return rootView;

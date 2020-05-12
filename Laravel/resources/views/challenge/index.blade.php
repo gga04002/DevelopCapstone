@@ -1,4 +1,4 @@
-@extends('menu')
+@extends('top_nav')
 
 @section('main')
 <div>
