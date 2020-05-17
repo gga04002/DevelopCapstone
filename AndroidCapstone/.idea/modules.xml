@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="waistand/app" />
-      <module fileurl="file://$PROJECT_DIR$/waistand.iml" filepath="$PROJECT_DIR$/waistand.iml" group="waistand" />
+      <module fileurl="file://$PROJECT_DIR$/IHaveToFly.iml" filepath="$PROJECT_DIR$/IHaveToFly.iml" group="IHaveToFly" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="IHaveToFly/app" />
     </modules>
   </component>
 </project>

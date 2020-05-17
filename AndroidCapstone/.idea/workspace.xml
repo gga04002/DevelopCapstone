@@ -5,35 +5,15 @@
       <config />
     </shared>
   </component>
-  <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="BLUETOO" />
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="info" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6ba2b08-986e-49af-b602-99bc779e2629" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/waistand/FragmentSeat.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/waistand/FragmentSeat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Laravel/app/Http/Controllers/Daily_statsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Laravel/app/Http/Controllers/Daily_statsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Laravel/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Laravel/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Laravel/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Laravel/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Laravel/public/css/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Laravel/public/css/menu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Laravel/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Laravel/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Laravel/resources/views/menu.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Laravel/resources/views/stats.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Laravel/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/../Laravel/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../방석 데이터/방석 csv/데이터셋.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../방석 데이터/방석 csv/새 폴더.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../방석 데이터/방석 csv/새 폴더.zip" afterDir="false" />
-    </list>
+    <list default="true" id="392db051-b52e-4a11-a45d-1f76b1caf137" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5X_API_27" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_27" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -46,47 +26,12 @@
       </state>
     </system>
   </component>
-  <component name="FavoritesManager">
-    <favorites_list name="waistand" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="layoutResourceFile" />
-        <option value="Class" />
-        <option value="resourceFile" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="ProjectId" id="1aaMDDYbIceQ8yJziLqLsFdqYz6" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1bUsieBLnmpD23Redb1KySOIfnC" />
   <component name="PropertiesComponent">
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="ce0417141c869f1004" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-04-25T03:55:19.214Z" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="29e5cd81923f7ece" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-05-11T18:39:35.251Z" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.17" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\DevelopCapstone\AndroidCapstone\app\src\main\res\drawable" />
-      <recent name="C:\DevelopCapstone\AndroidCapstone\app\src\main\res\layout" />
-      <recent name="C:\DevelopCapstone\AndroidCapstone\app\src\main\res\menu" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.example.waistand" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\AndroidCapstone\app\src\main\res\drawable" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -165,25 +110,28 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a6ba2b08-986e-49af-b602-99bc779e2629" name="Default Changelist" comment="" />
-      <created>1586969129876</created>
+      <changelist id="392db051-b52e-4a11-a45d-1f76b1caf137" name="Default Changelist" comment="" />
+      <created>1588698134496</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1586969129876</updated>
+      <updated>1588698134496</updated>
     </task>
     <servers />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/heyletscode/ihavetofly/GameView.java</url>
+          <line>218</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/heyletscode/ihavetofly/Flight.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
